@@ -418,6 +418,70 @@ header .container
     color:#9792E4;
 }
 
+/* Sixth section */
+
+.get-started
+{
+    text-align:center;
+    color:white;
+    padding:70px 0;
+}
+
+.get-started-container
+{
+    width:70%;
+    margin:0 auto;
+}
+
+.get-started h4
+{
+    color:#D5D4F4;
+    font-size:20px;
+    padding-bottom:20px;
+    font-weight:normal;
+}
+
+.get-started h3
+{
+    font-size:30px;
+}
+
+.get-started h2
+{
+    font-size:60px;
+    color:#FDC15F;
+    margin:30px 0;
+}
+
+.get-started p
+{
+    line-height:27px;
+    margin-bottom:50px;
+}
+
+.get-started a
+{
+    background-color:white;
+    color:#9792E4;
+    padding:20px 100px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:20px;
+    letter-spacing:3px;
+}
+
+.get-started address
+{
+    margin-top:50px;
+    font-style:normal;
+}
+
+.get-started .fa-circle
+{
+    font-size:5px;
+    vertical-align:middle;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) 
@@ -483,6 +547,32 @@ header .container
     .about-us h2 
     {
         font-size:70px;
+    }
+
+    .get-started-container
+    {
+        width:80%;
+    }
+
+    .get-started h3 
+    {
+        font-size:50px;
+    }
+
+    .get-started h2
+    {
+        font-size:80px;
+    }
+
+    .get-started p 
+    {
+        padding:0 100px;
+    }
+
+    .get-started a 
+    {
+        padding:30px 70px;
+        border-radius:60px;
     }
 }
 
@@ -567,5 +657,10 @@ header .container
     .benefits .column
     {
         flex-basis:calc(100% / 3);
+    }
+
+    .get-started p 
+    {
+        padding:0 350px;
     }
 }
