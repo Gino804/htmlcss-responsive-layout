@@ -19,6 +19,11 @@ main
     padding-top:130px;
 }
 
+main>section:nth-child(even)
+{
+    background-color:#9792E4;
+}
+
 /* Utils */
 
 .container
@@ -82,6 +87,25 @@ header .container
     width:100%;
 }
 
+/* Second section */
+
+.planning-left
+{
+    min-height:500px;
+}
+
+.planning-right
+{
+    background-color:white;
+    border-radius:30px;
+    min-height:300px;
+}
+
+.planning .container
+{
+    padding:50px 0;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) 
@@ -117,5 +141,23 @@ header .container
     .nav-menu
     {
         display:block;
+    }
+
+    .planning .container
+    {
+        display:flex;
+        padding:30px 100px;
+        align-items:flex-end;
+    }
+
+    .planning-left
+    {
+        flex-basis:50%;
+    }
+
+    .planning-right
+    {
+        height:200px;
+        flex-basis:50%;
     }
 }
