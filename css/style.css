@@ -352,6 +352,72 @@ header .container
     font-weight:bold;
 }
 
+/* Fifth section */
+
+.about-us
+{
+    margin:50px 0;
+}
+
+.about-us h2
+{
+    font-size:40px;
+    color:#9792E4;
+    margin-bottom:30px;
+}
+
+.about-us p 
+{
+    font-size:20px;
+    line-height:35px;
+}
+
+.about-us p:last-child
+{
+    margin:50px 0;
+}
+
+.about-us img 
+{
+    width:200px;
+    border-radius:50%;
+}
+
+.about-us h3
+{
+    color:#9792E4;
+    font-size:30px;
+    margin:20px 0;
+}
+
+.about-us a
+{
+    color:white;
+    background-color:#9792E4;
+    padding:5px 15px;
+    border-radius:20px;
+}
+
+.about-us .fa-linkedin
+{
+    margin-right:10px;
+}
+
+.about-us .img-container
+{
+    position:relative;
+    width:200px;
+}
+
+.about-us .fa-quote-left
+{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:70px;
+    color:#9792E4;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) 
@@ -400,6 +466,21 @@ header .container
     }
 
     .benefits .card h2
+    {
+        font-size:70px;
+    }
+
+    .about-us .container
+    {
+        display:flex;
+    }
+
+    .about-us .container>div:first-child
+    {
+        padding-right:50px;
+    }
+
+    .about-us h2 
     {
         font-size:70px;
     }
