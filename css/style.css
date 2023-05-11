@@ -6,3 +6,80 @@
 	padding:0;
 	box-sizing:border-box;
 }
+
+/* Generics */
+
+body
+{
+    font-family:PT sans;
+}
+
+/* Utils */
+
+.container
+{
+    max-width:400px;
+    margin:auto;
+}
+
+.flex
+{
+    display:flex;
+}
+
+/* Header */
+
+header
+{
+    position:fixed;
+    z-index:1;
+    background-color:#0084FD;
+    height:100px;
+    width:100%;
+}
+
+header .container
+{
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+
+.nav-menu
+{
+    display:none;
+}
+
+.nav-menu ul
+{
+    list-style-type:none;
+    display:flex;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) 
+{
+    .container 
+    {
+      max-width:700px;
+    }
+}
+
+@media screen and (min-width: 1200px) 
+{
+    .container 
+    {
+      max-width:1000px;
+    }
+
+    .hamb-menu
+    {
+        display:none;
+    }
+
+    .nav-menu
+    {
+        display:flex;
+    }
+}
