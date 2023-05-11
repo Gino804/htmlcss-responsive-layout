@@ -116,6 +116,33 @@ header .container
     margin-top:50px;
 }
 
+/* Fourth section */
+
+.benefits
+{
+    padding:50px 0;
+    margin-top:50px;
+}
+
+.benefits .row
+{
+    flex-wrap:wrap;
+}
+
+.benefits .column
+{
+    flex-basis:100%;
+    padding:10px;
+}
+
+.benefits .card
+{
+    height:300px;
+    width:100%;
+    background-color:white;
+    border-radius:20px;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) 
@@ -133,6 +160,11 @@ header .container
     .application .column
     {
         flex-basis:calc(100% / 3);
+    }
+
+    .benefits .column
+    {
+        flex-basis:50%;
     }
 }
 
@@ -169,5 +201,10 @@ header .container
     {
         height:200px;
         flex-basis:50%;
+    }
+
+    .benefits .column
+    {
+        flex-basis:calc(100% / 3);
     }
 }
