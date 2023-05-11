@@ -11,7 +11,7 @@
 
 body
 {
-    font-family:PT sans;
+    font-family: 'PT sans', sans-serif;
 }
 
 main
@@ -87,6 +87,11 @@ header .container
 
 /* First section */
 
+.application
+{
+    margin-bottom:50px;
+}
+
 .application .row
 {
     flex-wrap:wrap;
@@ -98,12 +103,63 @@ header .container
     padding:10px;
 }
 
+.application .column:first-child .card
+{
+    text-align:left;
+    padding:0 30px;
+}
+
 .application .card
 {
     background-color:#B5DDFF;
     border-radius:20px;
-    min-height:300px;
     width:100%;
+    height:100%;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.application h3
+{
+    color:#0084FD;
+    font-size:25px;
+    padding:30px 0;
+}
+
+.application p
+{
+    color:#5A6E7F;
+    line-height:28px;
+    font-weight:bold;
+}
+
+.application .button
+{
+    background-color:#0084FD;
+    color:white;
+    display:inline-block;
+    padding:10px 50px;
+    border-radius:20px;
+    margin:30px 0;
+    font-weight:bold;
+    letter-spacing:5px;
+}
+
+.application .fa-apple
+{
+    margin-right:10px;
+}
+
+.application img
+{
+    width:100%;
+    vertical-align:middle;
+}
+
+.application .card>i
+{
+    color:#0084FD;
+    font-size:90px;
 }
 
 /* Second section */
@@ -185,6 +241,11 @@ header .container
     {
         flex-basis:50%;
     }
+
+    .application img
+    {
+        width:70%;
+    }
 }
 
 @media screen and (min-width: 1200px) 
@@ -202,6 +263,27 @@ header .container
     .nav-menu
     {
         display:block;
+    }
+
+    .application .card-flex
+    {
+        display:flex;
+        height:100%;
+    }
+
+    .application .card-flex>div
+    {
+        flex-basis:50%;
+        position:relative;
+    }
+
+    .application img
+    {
+        width:260px;
+        position:absolute;
+        bottom:0;
+        right:0;
+        left:0;
     }
 
     .planning .container
